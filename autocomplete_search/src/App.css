@@ -1,0 +1,9 @@
+.search_bar{
+  height: auto;
+  width: auto;
+  border: 2px solid black;
+  display: block;
+}
+span{
+  display: block;
+}
