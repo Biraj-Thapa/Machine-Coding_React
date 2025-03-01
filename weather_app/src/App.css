@@ -1,0 +1,8 @@
+.weather_container{
+  max-width: 400px;
+  background-color:blue;
+  text-align: center;
+  padding:35px;
+  margin:auto;
+  border-radius:10%
+}
