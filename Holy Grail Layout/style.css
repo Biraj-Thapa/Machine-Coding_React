@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header,
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  
+  .container {
+    display: flex;
+    flex-grow: 1; /* Expands properly in column layout */
+  }
+  
+  .main_content {
+    flex: 1;
+    background-color: brown;
+  }
+  
+  .side_content {
+    flex-basis: 200px;
+    flex-shrink: 0;
+    padding: 20px;
+  }
+  
+  .side_right {
+    background-color: pink;
+  }
+  
+  .side_left {
+    background-color: blue;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .container {
+      flex-direction: column;
+      width: 100%;
+    }
+    .main_content {
+      width: 100%;
+    }
+    .side_content {
+      flex-basis: auto;
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  
